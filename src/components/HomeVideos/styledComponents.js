@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FailedView = styled.div`
+export const NoVideosView = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,24 +8,22 @@ export const FailedView = styled.div`
   background: none;
 `
 
-export const FailedImage = styled.img`
+export const NoVideosImage = styled.img`
   width: 200px;
   @media screen and (min-width: 768px) {
     width: 450px;
   }
 `
-export const FailedHeading = styled.h1`
+export const NoVideosHeading = styled.h1`
   font-family: Roboto;
   font-size: 25px;
   color: ${props => props.headingColor};
-  text-align: center;
 `
 
-export const FailedNote = styled.p`
+export const NoVideosNote = styled.p`
   font-family: Roboto;
   font-size: 18px;
   color: ${props => props.noteColor};
-  text-align: center;
 `
 
 export const RetryButton = styled.button`
@@ -39,4 +37,14 @@ export const RetryButton = styled.button`
   padding-bottom: 5px;
   font-family: Roboto;
   font-size: 15px;
+`
+export const VideoCardList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+  }
 `
